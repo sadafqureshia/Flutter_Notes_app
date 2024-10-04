@@ -80,7 +80,7 @@ class _RegisterpageState extends State<Registerpage> {
               children: [
                 SizedBox(height: height * 0.03),
                 Image.asset(
-                  "assets/images/Login Image.png",
+                  "assets/images/signup.jpg",
                   height: height * 0.3,
                   width: 150,
                 ),
