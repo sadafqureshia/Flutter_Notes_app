@@ -17,7 +17,7 @@ class Homepage extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.blue.shade300, Colors.blue.shade600],
+            colors: [Color.fromARGB(255, 243, 243, 176), Color.fromARGB(255, 237, 191, 133)],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -43,7 +43,7 @@ class Homepage extends StatelessWidget {
                   title: "Engineering",
                   courses: ["BCA", "B-Tech", "M-Tech"],
                   icon: Icons.engineering,
-                  iconColor: Colors.green,
+                  iconColor: Color.fromARGB(255, 96, 175, 76),
                   navigateTo: const EngineeringPage(),
                 ),
                 const SizedBox(height: 20),
@@ -52,7 +52,7 @@ class Homepage extends StatelessWidget {
                   title: "Management",
                   courses: ["BBA", "B.Com", "MBA"],
                   icon: Icons.business_center,
-                  iconColor: Colors.orange,
+                  iconColor: const Color.fromARGB(255, 209, 146, 52),
                 ),
                 const SizedBox(height: 20),
                 // Add more faculty cards here
@@ -60,22 +60,22 @@ class Homepage extends StatelessWidget {
                   title: "Arts & Humanities",
                   courses: ["BA", "MA", "PhD"],
                   icon: Icons.menu_book,
-                  iconColor: Colors.purple,
+                  iconColor: const Color.fromARGB(255, 79, 21, 90),
                 ),
                 const SizedBox(height: 20),
                 buildFacultyCard(
                   title: "Sciences",
                   courses: ["BSc", "MSc", "PhD"],
                   icon: Icons.science,
-                  iconColor: Colors.blue,
+                  iconColor: const Color.fromARGB(255, 49, 115, 169),
                 ),
               ],
             ),
           ),
         ),
-      ),
+      );
       drawer: const MyDrawer(),
-    );
+  );
   }
 
   // Helper method to build a faculty card with navigation
